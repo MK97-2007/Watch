@@ -1,0 +1,28 @@
+{
+    "name": "Watch",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "sevenseg": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v0.15.13",
+        "tag": "v0.15.13",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/f6ae803c58756d6e4c1484e7577b5a984f377451",
+        "target": "1.2.6",
+        "pxt": "5.30.40",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
