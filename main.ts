@@ -1,6 +1,17 @@
 namespace SpriteKind {
     export const Widget = SpriteKind.create()
 }
+let timer = false
+let Digi_second: DigitCounter = null
+let Digi_minute: DigitCounter = null
+let Digi_hour: DigitCounter = null
+let Ændre_sprite: Sprite = null
+let mySprite: Sprite = null
+let mySprite2: Sprite = null
+let Second = 0
+let Minute = 0
+let Hour = 0
+let Ændre = 0
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (timer) {
         timer = false
@@ -51,18 +62,6 @@ function start_timer () {
         `, SpriteKind.Player)
     mySprite2.setPosition(102, 76)
 }
-let Ændre = 0
-let Hour = 0
-let Minute = 0
-let Second = 0
-let mySprite2: Sprite = null
-let mySprite: Sprite = null
-let Ændre_sprite: Sprite = null
-let Digi_hour: DigitCounter = null
-let Digi_minute: DigitCounter = null
-let Digi_second: DigitCounter = null
-let timer = false
-start_timer()
 forever(function () {
     if (timer) {
         pause(1000)
